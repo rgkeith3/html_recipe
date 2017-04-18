@@ -43,6 +43,41 @@
         <li>enjoy</li>
       </ol>
     </section>
+    <section>
+      <form action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="review[name]" id="name">
+
+        <br>
+
+        <label for="rating">Rating</label>
+        <input selected type="radio" name="review[rating]" id="rating" value="1">
+        <input type="radio" name="review[rating]" id="rating" value="2">
+        <input type="radio" name="review[rating]" id="rating" value="3">
+        <input type="radio" name="review[rating]" id="rating" value="4">
+        <input type="radio" name="review[rating]" id="rating" value="5">
+
+        <br>
+
+        <label for="expertise">Cooking Expertise</label>
+
+        <br>
+        
+        <select name="review[expertise]" id="expertise">
+          <option disabled selected>--Select Cooking Expertise--</option>
+          <option value="sometimes">Sometimes Cook</option>
+          <option value="everyday">Cook Everyday</option>
+          <option value="hobbyist">Cooking is a Hobby</option>
+          <option value="professional">Professional Chef</option>
+        </select>
+
+        <br>
+
+        <label>
+          <textarea name="review[review]"></textarea>
+        </label>
+      </form>
+    </section>
     <footer>
       <p>this recipe is as old as dirt</p>
     </footer>
